@@ -1,0 +1,5 @@
+# Cloudflare Pages. Set the build command in the dashboard (or `wrangler pages
+# deploy`) to `npm run build`; this file declares where the output lands.
+name = "nextra-oldstyle"
+pages_build_output_dir = "dist"
+compatibility_date = "2025-08-24"

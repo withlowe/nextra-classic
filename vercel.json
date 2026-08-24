@@ -1,0 +1,16 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "npm install --ignore-scripts",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/theme/(.*)",
+      "headers": [
+        { "key": "cache-control", "value": "public, max-age=0, must-revalidate" }
+      ]
+    }
+  ]
+}

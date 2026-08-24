@@ -1,0 +1,16 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  # Native TypeScript type stripping — the build runs `node build.ts` directly.
+  NODE_VERSION = "24"
+
+[build.processing]
+  skip_processing = true
+
+# `dist/404.html` is served automatically for unmatched paths.
+[[headers]]
+  for = "/theme/*"
+  [headers.values]
+    cache-control = "public, max-age=0, must-revalidate"

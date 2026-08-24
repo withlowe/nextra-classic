@@ -1,0 +1,17 @@
+/**
+ * Deliberate changes on top of the vendored theme in globals.css.
+ * Loaded after it, so plain same-specificity rules win.
+ * Keep this file small — it is the record of where we diverge from the original.
+ */
+
+/**
+ * The original only set a background on the search input in dark mode, leaving
+ * light mode at the browser default. That renders white in desktop Chrome but
+ * gray in several mobile browsers. Pin it to white.
+ *
+ * Specificity is 0-1-1 here, below the theme's `.dark .nextra-search input`
+ * (0-2-1), so dark mode keeps its own background.
+ */
+.nextra-search input {
+  background-color: #fff;
+}

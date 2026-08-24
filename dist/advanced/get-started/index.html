@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Get Started – Nextra</title>
+<meta name="msapplication-TileColor" content="#ffffff"/><meta name="theme-color" content="#ffffff"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="Content-Language" content="en"/><meta name="description" content="Nextra: the next docs builder"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="@shuding_"/><meta property="og:title" content="Nextra: the next docs builder"/><meta property="og:description" content="Nextra: the next docs builder"/><meta name="apple-mobile-web-app-title" content="Nextra"/>
+<link rel="stylesheet" href="/theme/globals.css"/>
+<link rel="stylesheet" href="/theme/overrides.css"/>
+<style>html.dark .theme-icon-sun,html:not(.dark) .theme-icon-moon{display:none}</style>
+<script>!function(){try{var d=document.documentElement.classList,e=localStorage.getItem("theme");d.remove("light","dark"),e||(localStorage.setItem("theme","light"),e="light"),d.add(e)}catch(e){}}()</script>
+</head>
+<body>
+<div class="nextra-container main-container flex flex-col">
+<nav class="flex items-center bg-white z-20 fixed top-0 left-0 right-0 h-16 border-b border-gray-200 px-6 dark:bg-dark dark:border-gray-900 bg-opacity-[.97] dark:bg-opacity-100">
+<div class="w-full flex items-center mr-2"><a class="no-underline text-current inline-flex items-center hover:opacity-75" href="/"><span class="mr-2 font-extrabold md:inline">Nextra</span><span class="text-gray-600 font-normal hidden md:inline">The Next Site Builder (v1.0)</span></a></div>
+<div class="flex-1"><div class="hidden md:inline-block mr-2"><div class="nextra-search relative w-full md:w-64"><input type="search" class="appearance-none border rounded py-2 px-3 leading-tight focus:outline-none focus:ring w-full" placeholder="Search (&quot;/&quot; to focus)" autocomplete="off"/></div></div></div>
+<a class="text-current p-2 cursor-pointer" tabindex="0" role="button" aria-label="Toggle theme" data-theme-toggle><svg class="theme-icon-sun" fill="none" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg><svg class="theme-icon-moon" fill="none" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg></a>
+<button class="block md:hidden p-2" aria-label="Toggle navigation" data-menu-toggle><svg fill="none" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+<div class="-mr-2"></div>
+</nav>
+<div class="flex flex-1 h-full">
+<aside class="fixed h-screen bg-white dark:bg-dark flex-shrink-0 w-full md:w-64 md:sticky z-20 hidden md:block" style="top:4rem;height:calc(100vh - 4rem)" data-sidebar>
+<div class="sidebar border-gray-200 dark:border-gray-900 w-full p-4 pb-40 md:pb-16 h-full overflow-y-auto">
+<div class="mb-4 block md:hidden"><div class="nextra-search relative w-full md:w-64"><input type="search" class="appearance-none border rounded py-2 px-3 leading-tight focus:outline-none focus:ring w-full" placeholder="Search (&quot;/&quot; to focus)" autocomplete="off"/></div></div>
+<div class="hidden md:block"><ul><li class=""><a href="/Classic">Classic</a></li><li class="active"><button>Advanced</button><div style="display:initial"><ul><li class=""><a href="/advanced/code-highlighting">Code Highlighting</a></li><li class="active"><a href="/advanced/get-started">Get Started</a></li></ul></div></li><li class=""><a href="/i18n">I18n</a></li><li class=""><a href="/">Index</a></li><li class=""><a href="/mdx">Mdx</a></li><li class=""><a href="/ssg">Ssg</a></li></ul></div>
+<div class="md:hidden"><ul><li class=""><a href="/Classic">Classic</a></li><li class="active"><button>Advanced</button><div style="display:initial"><ul><li class=""><a href="/advanced/code-highlighting">Code Highlighting</a></li><li class="active"><a href="/advanced/get-started">Get Started</a></li></ul></div></li><li class=""><a href="/i18n">I18n</a></li><li class=""><a href="/">Index</a></li><li class=""><a href="/mdx">Mdx</a></li><li class=""><a href="/ssg">Ssg</a></li></ul></div>
+</div>
+</aside>
+<article class="docs-container relative pt-16 pb-16 px-6 md:px-8 w-full max-w-full flex min-w-0">
+<main class="max-w-screen-md mx-auto pt-4 z-10 min-w-0">
+<h1 id="get-started">Get Started</h1>
+<p>Create your own Nextra site and deploy to Vercel:</p>
+<p><a href="https://vercel.com/import/git?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra&amp;c=1"><img src="https://vercel.com/button" alt=""/></a></p>
+<p>Vercel will create the Nextra repository and deploy the site for you with just a few clicks.<br/>
+Once done, every change in the repository will be deployed automatically.</p>
+<hr/>
+<h3 id="configurations">Configurations</h3>
+<ol>
+<li>
+<p>Install Next.js and React: <code>yarn add next react react-dom</code></p>
+</li>
+<li>
+<p>Install Nextra and the docs theme: <code>yarn add nextra nextra-theme-docs</code></p>
+</li>
+<li>
+<p>Create the following Next.js config and theme config under the root directory:</p>
+</li>
+</ol>
+<pre><code class="language-jsx">// next.config.js
+const withNextra = require(&#39;nextra&#39;)(&#39;nextra-theme-docs&#39;, &#39;./theme.config.js&#39;)
+module.exports = withNextra()
+</code></pre>
+<pre><code class="language-jsx">// theme.config.js
+export default {
+  repository: &#39;https://github.com/shuding/nextra&#39;, // project repo
+  docsRepository: &#39;https://github.com/shuding/nextra&#39;, // docs repo
+  branch: &#39;master&#39;, // branch of docs
+  path: &#39;/&#39;, // path of docs
+  titleSuffix: &#39; – Nextra&#39;,
+  nextLinks: true,
+  prevLinks: true,
+  search: true,
+  customSearch: null, // customizable, you can use algolia for example
+  darkMode: true,
+  footer: true,
+  footerText: &#39;MIT 2020 © Shu Ding.&#39;,
+  footerEditOnGitHubLink: true, // will link to the docs repo
+  logo: &lt;&gt;
+    &lt;svg&gt;...&lt;/svg&gt;
+    &lt;span&gt;Next.js Static Site Generator&lt;/span&gt;
+  &lt;/&gt;,
+  head: &lt;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;Nextra: the next docs builder&quot; /&gt;
+    &lt;meta name=&quot;og:title&quot; content=&quot;Nextra: the next docs builder&quot; /&gt;
+  &lt;/&gt;
+}
+</code></pre>
+<ol start="4">
+<li>Create <code>pages/_app.js</code> and include the theme stylesheet:</li>
+</ol>
+<pre><code class="language-jsx">import &#39;nextra-theme-docs/style.css&#39;
+
+export default function Nextra({ Component, pageProps }) {
+  return &lt;Component {...pageProps} /&gt;
+}
+</code></pre>
+<ol start="5">
+<li>You are good to go!</li>
+</ol>
+<hr/>
+<footer class="mt-24"><div class="flex flex-row items-center justify-between"><div><a class="text-lg font-medium p-4 -m-4 no-underline text-gray-600 hover:text-blue-600 flex items-center mr-2" title="Code Highlighting" href="/advanced/code-highlighting"><svg height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="transform inline flex-shrink-0 rotate-180 mr-1"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>Code Highlighting</a></div><div><a class="text-lg font-medium p-4 -m-4 no-underline text-gray-600 hover:text-blue-600 flex items-center ml-2" title="I18n" href="/i18n">I18n<svg height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="transform inline flex-shrink-0 ml-1"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a></div></div><hr/></footer>
+</main>
+<div class="w-64 hidden xl:block text-sm pl-4"></div>
+</article>
+</div>
+</div>
+<script id="search-index" type="application/json">[{"title":"Nextra Classic","route":"/Classic","depth":0},{"title":"Code Highlighting","route":"/advanced/code-highlighting","depth":0},{"title":"More Languages","route":"/advanced/code-highlighting#more-languages","depth":2},{"title":"Get Started","route":"/advanced/get-started","depth":0},{"title":"Configurations","route":"/advanced/get-started#configurations","depth":3},{"title":"I18n","route":"/i18n","depth":0},{"title":"Nextra","route":"/","depth":0},{"title":"Markdown and React","route":"/mdx","depth":0},{"title":"Markdown With React Components","route":"/mdx#markdown-with-react-components","depth":3},{"title":"List","route":"/mdx#list","depth":2},{"title":"**Hello**, This Is a _Title_ Inside `h2`","route":"/mdx#hello-this-is-a-_title_-inside-h2","depth":2},{"title":"**Hello**, This Is a _Title_ Inside `h3`","route":"/mdx#hello-this-is-a-_title_-inside-h3","depth":3},{"title":"**Hello**, This Is a _Title_ Inside `h4`","route":"/mdx#hello-this-is-a-_title_-inside-h4","depth":4},{"title":"**Hello**, This Is a _Title_ Inside `h5`","route":"/mdx#hello-this-is-a-_title_-inside-h5","depth":5},{"title":"**Hello**, This Is a _Title_ Inside `h6`","route":"/mdx#hello-this-is-a-_title_-inside-h6","depth":6},{"title":"Code Highlighting","route":"/mdx#code-highlighting","depth":2},{"title":"Blockquote","route":"/mdx#blockquote","depth":2},{"title":"Table","route":"/mdx#table","depth":2},{"title":"Task List","route":"/mdx#task-list","depth":2},{"title":"Next.js SSG in MDX","route":"/ssg","depth":0}]</script>
+<script src="/theme/app.js" defer></script>
+</body>
+</html>

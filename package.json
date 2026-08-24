@@ -1,0 +1,14 @@
+{
+  "name": "nextra-oldstyle",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node --experimental-strip-types build.ts",
+    "start": "node --experimental-strip-types serve.ts",
+    "dev": "node --experimental-strip-types dev.ts",
+    "check": "npm run build && node --experimental-strip-types check.ts"
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  }
+}
