@@ -1,11 +1,10 @@
-# Nextra (old style)
+# Nextra (Classic)
 
 A static docs site with **zero dependencies** — no framework, no build tooling,
 nothing in `node_modules`. It carries the original `nextra-theme-docs@1.x` design
-forward verbatim, and adds the search the old theme shipped but never wired up.
+forward verbatim, with working search.
 
-`npm install` installs nothing. Everything runs on Node 24, which executes the
-TypeScript sources directly via native type stripping.
+Everything runs on Node 24, which executes the TypeScript sources directly via native type stripping.
 
 ![](/public/demo.png)
 
